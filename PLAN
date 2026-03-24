@@ -1,0 +1,5 @@
+1. Basic shell with fork/execvp and built-ins.
+
+2. Add pipes and maybe simple redirection. 
+
+3. (Optional) Run shell in a chroot environment or a minimal container.
