@@ -11,6 +11,8 @@ void exitShell(char** args);
 
 void printWorkDir(char** args);
 void changeDir(char** args);
+void echo(char** args);
+void help(char** args);
 
 BuiltInCommand* getCommandVector(size_t* count);
 

@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+#include <stddef.h>
+#define VECTOR_LENGTH 10
 
-static char* tokenVector[10];
+static char* tokenVector[VECTOR_LENGTH];
 static int counter = 0;
 
 void addToken(char* token){
@@ -36,4 +38,8 @@ void addNullToken(){
 
 char** getTokens(){
     return tokenVector;
+}
+
+size_t getVectorLength() {
+    return VECTOR_LENGTH;
 }
