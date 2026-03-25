@@ -1,9 +1,14 @@
 #ifndef BUILTINS_H
 #define BUILTINS_H
+#include <stddef.h>
 
-static typedef struct {
+typedef struct {
     char* name;
+    void (*func)(char** args); // Function pointer, argument is an array of char*
+} BuiltInCommand;
 
-}
+void exitShell(char** args);
+
+BuiltInCommand* getCommandVector(size_t* count);
 
 #endif

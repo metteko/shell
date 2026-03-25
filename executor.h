@@ -1,8 +1,8 @@
 #ifndef EXECUTOR_H
 #define EXECUTOR_H
-#include <stdbool.h>
+#include "builtins.h"
 
 void processCommand();
-bool checkBuiltIn(char* command); 
+BuiltInCommand checkBuiltIn(char* command); 
 
 #endif

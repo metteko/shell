@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 static char* tokenVector[10];
-int counter = 0;
+static int counter = 0;
 
 void addToken(char* token){
     if (counter < 9){
@@ -20,6 +20,7 @@ void addToken(char* token){
 
 void clearTokens(){
     for (int i = 0; i < 10; i++){
+        free(tokenVector[i]);
         tokenVector[i] = NULL;
     }
     counter = 0;
