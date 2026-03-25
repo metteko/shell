@@ -9,6 +9,9 @@ typedef struct {
 
 void exitShell(char** args);
 
+void printWorkDir(char** args);
+void changeDir(char** args);
+
 BuiltInCommand* getCommandVector(size_t* count);
 
 #endif
