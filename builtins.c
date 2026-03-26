@@ -46,6 +46,7 @@ void help(char** args){
     printf("External binaries are executed through the fork()/exec() pattern\n");
     printf("Built-in commands are implemented by myself, check them out:\n\n");
     printf("exit\npwd\ncd\necho\nhelp\n\n");
+    printf("This shell also supports pipes \"|\"\n\n");
 }
 
 BuiltInCommand* getCommandVector(size_t* count){
