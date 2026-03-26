@@ -21,6 +21,7 @@ int main(int argc, char* argv[]){
             addToken(token);
             token = strtok(NULL, " ");
         }
+        // Last token should be NULL for execvp
         addNullToken();
 
         processCommand();
