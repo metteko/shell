@@ -56,9 +56,9 @@ BuiltInCommand checkBuiltIn(char* command){
 
 // Check for pipe character
 bool checkPipe(char** tokenVector, char** left, char** right) {
+    char* pipeChar = "|";
     for (int i = 0; i < getVectorLength(); i++) {
-        char* pipeChar = "|";
-        if (strcmp(tokenVector[i], pipeChar) == 0) {
+        if (tokenVector[i] != NULL && strcmp(tokenVector[i], pipeChar) == 0) {
             // Left
             for (int j = 0; j < i; j++) {
                 left[j] = tokenVector[j];
